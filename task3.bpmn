@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_0lr9dwq" targetNamespace="http://bpmn.io/schema/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="18.6.1">
+  <bpmn:process id="Process_0kef1jp" isExecutable="false">
+    <bpmn:startEvent id="StartEvent_1m79cel">
+      <bpmn:outgoing>Flow_0zvfso4</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="Activity_15ldtar" name="Пользователь отправляет фото книжной полки">
+      <bpmn:incoming>Flow_0zvfso4</bpmn:incoming>
+      <bpmn:outgoing>Flow_1xs8rwx</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="Activity_04qws7s" name="Нейросеть сканирует фото и заполняет форму">
+      <bpmn:incoming>Flow_1xs8rwx</bpmn:incoming>
+      <bpmn:outgoing>Flow_06tsmeu</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_0zvfso4" sourceRef="StartEvent_1m79cel" targetRef="Activity_15ldtar" />
+    <bpmn:sequenceFlow id="Flow_1xs8rwx" sourceRef="Activity_15ldtar" targetRef="Activity_04qws7s" />
+    <bpmn:exclusiveGateway id="Gateway_1cqsamo">
+      <bpmn:incoming>Flow_06tsmeu</bpmn:incoming>
+      <bpmn:outgoing>Flow_041nf3w</bpmn:outgoing>
+      <bpmn:outgoing>Flow_0ki781j</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="Flow_06tsmeu" sourceRef="Activity_04qws7s" targetRef="Gateway_1cqsamo" />
+    <bpmn:userTask id="Activity_0s2xi5s" name="Корректировка данных">
+      <bpmn:incoming>Flow_041nf3w</bpmn:incoming>
+      <bpmn:outgoing>Flow_0qysudz</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sequenceFlow id="Flow_041nf3w" sourceRef="Gateway_1cqsamo" targetRef="Activity_0s2xi5s" />
+    <bpmn:userTask id="Activity_14fqeg5" name="Указание физического местоположения">
+      <bpmn:incoming>Flow_0ki781j</bpmn:incoming>
+      <bpmn:incoming>Flow_0qysudz</bpmn:incoming>
+      <bpmn:outgoing>Flow_0f4fgll</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sequenceFlow id="Flow_0ki781j" sourceRef="Gateway_1cqsamo" targetRef="Activity_14fqeg5" />
+    <bpmn:sequenceFlow id="Flow_0qysudz" sourceRef="Activity_0s2xi5s" targetRef="Activity_14fqeg5" />
+    <bpmn:userTask id="Activity_1632mpf" name="Присвоение статуса книге">
+      <bpmn:incoming>Flow_0f4fgll</bpmn:incoming>
+      <bpmn:outgoing>Flow_0pvcu0s</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sequenceFlow id="Flow_0f4fgll" sourceRef="Activity_14fqeg5" targetRef="Activity_1632mpf" />
+    <bpmn:serviceTask id="Activity_1xtvjze" name="Определение книги в каталог">
+      <bpmn:incoming>Flow_0pvcu0s</bpmn:incoming>
+      <bpmn:outgoing>Flow_155yvdi</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_0pvcu0s" sourceRef="Activity_1632mpf" targetRef="Activity_1xtvjze" />
+    <bpmn:endEvent id="Event_10nwui3">
+      <bpmn:incoming>Flow_155yvdi</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_155yvdi" sourceRef="Activity_1xtvjze" targetRef="Event_10nwui3" />
+    <bpmn:textAnnotation id="TextAnnotation_1f03v6j">
+      <bpmn:text>Данные о книге корректны?</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_02azchq">
+      <bpmn:text>Нет</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_03h660n">
+      <bpmn:text>Да</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_04l18a9">
+      <bpmn:text>Книга добавлена</bpmn:text>
+    </bpmn:textAnnotation>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_0kef1jp">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1m79cel">
+        <dc:Bounds x="156" y="82" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_15ldtar_di" bpmnElement="Activity_15ldtar">
+        <dc:Bounds x="250" y="60" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_04qws7s_di" bpmnElement="Activity_04qws7s">
+        <dc:Bounds x="410" y="60" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1cqsamo_di" bpmnElement="Gateway_1cqsamo" isMarkerVisible="true">
+        <dc:Bounds x="435" y="205" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0s2xi5s_di" bpmnElement="Activity_0s2xi5s">
+        <dc:Bounds x="250" y="190" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_14fqeg5_di" bpmnElement="Activity_14fqeg5">
+        <dc:Bounds x="410" y="330" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1632mpf_di" bpmnElement="Activity_1632mpf">
+        <dc:Bounds x="600" y="330" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1xtvjze_di" bpmnElement="Activity_1xtvjze">
+        <dc:Bounds x="780" y="330" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_10nwui3_di" bpmnElement="Event_10nwui3">
+        <dc:Bounds x="952" y="352" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_1f03v6j_di" bpmnElement="TextAnnotation_1f03v6j">
+        <dc:Bounds x="510" y="209" width="100" height="41" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_02azchq_di" bpmnElement="TextAnnotation_02azchq">
+        <dc:Bounds x="370" y="190" width="100" height="30" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_03h660n_di" bpmnElement="TextAnnotation_03h660n">
+        <dc:Bounds x="480" y="278" width="100" height="30" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_04l18a9_di" bpmnElement="TextAnnotation_04l18a9">
+        <dc:Bounds x="930" y="290" width="100" height="41" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0zvfso4_di" bpmnElement="Flow_0zvfso4">
+        <di:waypoint x="192" y="100" />
+        <di:waypoint x="250" y="100" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1xs8rwx_di" bpmnElement="Flow_1xs8rwx">
+        <di:waypoint x="350" y="100" />
+        <di:waypoint x="410" y="100" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_06tsmeu_di" bpmnElement="Flow_06tsmeu">
+        <di:waypoint x="460" y="140" />
+        <di:waypoint x="460" y="205" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_041nf3w_di" bpmnElement="Flow_041nf3w">
+        <di:waypoint x="435" y="230" />
+        <di:waypoint x="350" y="230" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0ki781j_di" bpmnElement="Flow_0ki781j">
+        <di:waypoint x="460" y="255" />
+        <di:waypoint x="460" y="330" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0qysudz_di" bpmnElement="Flow_0qysudz">
+        <di:waypoint x="300" y="270" />
+        <di:waypoint x="300" y="370" />
+        <di:waypoint x="410" y="370" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0f4fgll_di" bpmnElement="Flow_0f4fgll">
+        <di:waypoint x="510" y="370" />
+        <di:waypoint x="600" y="370" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0pvcu0s_di" bpmnElement="Flow_0pvcu0s">
+        <di:waypoint x="700" y="370" />
+        <di:waypoint x="780" y="370" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_155yvdi_di" bpmnElement="Flow_155yvdi">
+        <di:waypoint x="880" y="370" />
+        <di:waypoint x="952" y="370" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
