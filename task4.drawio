@@ -1,10 +1,10 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
   <diagram name="Страница — 1" id="7OqYVxwZs7NzSu7urRc7">
-    <mxGraphModel dx="834" dy="542" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1042" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="eza31UwftHSti-V7xlUh-1" value="USER" style="shape=table;startSize=25;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-1" value="ПОЛЬЗОВАТЕЛЬ" style="shape=table;startSize=25;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
           <mxGeometry x="387" y="20" width="237" height="214" as="geometry" />
         </mxCell>
         <mxCell id="eza31UwftHSti-V7xlUh-2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="eza31UwftHSti-V7xlUh-1" vertex="1">
@@ -33,7 +33,7 @@
             <mxRectangle width="48" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-8" value="username" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-6" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-8" value="имя_пользователя" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-6" vertex="1">
           <mxGeometry x="48" width="167" height="47" as="geometry">
             <mxRectangle width="167" height="47" as="alternateBounds" />
           </mxGeometry>
@@ -69,7 +69,7 @@
             <mxRectangle width="48" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-16" value="created_at" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-14" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-16" value="дата_создания" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-14" vertex="1">
           <mxGeometry x="48" width="167" height="47" as="geometry">
             <mxRectangle width="167" height="47" as="alternateBounds" />
           </mxGeometry>
@@ -79,7 +79,7 @@
             <mxRectangle width="22" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-18" value="BOOK_SHELF_PHOTO" style="shape=table;startSize=25;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-18" value="ФОТО_КНИЖНОЙ_ПОЛКИ" style="shape=table;startSize=25;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
           <mxGeometry x="382" y="336" width="248" height="257" as="geometry" />
         </mxCell>
         <mxCell id="eza31UwftHSti-V7xlUh-19" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="eza31UwftHSti-V7xlUh-18" vertex="1">
@@ -126,7 +126,7 @@
             <mxRectangle width="48" height="46" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-29" value="image_url" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-27" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-29" value="url_фотографии" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-27" vertex="1">
           <mxGeometry x="48" width="178" height="46" as="geometry">
             <mxRectangle width="178" height="46" as="alternateBounds" />
           </mxGeometry>
@@ -144,7 +144,7 @@
             <mxRectangle width="48" height="46" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-33" value="uploaded_at" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-31" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-33" value="время_загрузки" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-31" vertex="1">
           <mxGeometry x="48" width="178" height="46" as="geometry">
             <mxRectangle width="178" height="46" as="alternateBounds" />
           </mxGeometry>
@@ -162,7 +162,7 @@
             <mxRectangle width="48" height="46" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-37" value="status" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-35" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-37" value="статус" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-35" vertex="1">
           <mxGeometry x="48" width="178" height="46" as="geometry">
             <mxRectangle width="178" height="46" as="alternateBounds" />
           </mxGeometry>
@@ -172,7 +172,7 @@
             <mxRectangle width="22" height="46" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-39" value="BOOK" style="shape=table;startSize=25;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-39" value="КНИГА" style="shape=table;startSize=25;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
           <mxGeometry x="367" y="695" width="279" height="513" as="geometry" />
         </mxCell>
         <mxCell id="eza31UwftHSti-V7xlUh-40" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="eza31UwftHSti-V7xlUh-39" vertex="1">
@@ -255,7 +255,7 @@
             <mxRectangle width="48" height="44" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-58" value="title" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-56" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-58" value="название" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-56" vertex="1">
           <mxGeometry x="48" width="209" height="44" as="geometry">
             <mxRectangle width="209" height="44" as="alternateBounds" />
           </mxGeometry>
@@ -273,7 +273,7 @@
             <mxRectangle width="48" height="44" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-62" value="author" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-60" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-62" value="автор" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-60" vertex="1">
           <mxGeometry x="48" width="209" height="44" as="geometry">
             <mxRectangle width="209" height="44" as="alternateBounds" />
           </mxGeometry>
@@ -291,7 +291,7 @@
             <mxRectangle width="48" height="44" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-66" value="isbn" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-64" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-66" value="номер_isbn" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-64" vertex="1">
           <mxGeometry x="48" width="209" height="44" as="geometry">
             <mxRectangle width="209" height="44" as="alternateBounds" />
           </mxGeometry>
@@ -309,7 +309,7 @@
             <mxRectangle width="48" height="44" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-70" value="publisher" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-68" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-70" value="издательство" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-68" vertex="1">
           <mxGeometry x="48" width="209" height="44" as="geometry">
             <mxRectangle width="209" height="44" as="alternateBounds" />
           </mxGeometry>
@@ -327,7 +327,7 @@
             <mxRectangle width="48" height="44" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-74" value="publication_year" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-72" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-74" value="год_издания" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-72" vertex="1">
           <mxGeometry x="48" width="209" height="44" as="geometry">
             <mxRectangle width="209" height="44" as="alternateBounds" />
           </mxGeometry>
@@ -345,7 +345,7 @@
             <mxRectangle width="48" height="44" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-78" value="description" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-76" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-78" value="описание" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-76" vertex="1">
           <mxGeometry x="48" width="209" height="44" as="geometry">
             <mxRectangle width="209" height="44" as="alternateBounds" />
           </mxGeometry>
@@ -363,7 +363,7 @@
             <mxRectangle width="48" height="44" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-82" value="added_at" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-80" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-82" value="дата_добавления" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-80" vertex="1">
           <mxGeometry x="48" width="209" height="44" as="geometry">
             <mxRectangle width="209" height="44" as="alternateBounds" />
           </mxGeometry>
@@ -373,7 +373,7 @@
             <mxRectangle width="22" height="44" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-84" value="BOOK_LOCATION" style="shape=table;startSize=25;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-84" value="МЕСТОНАХОЖДЕНИЕ_КНИГИ" style="shape=table;startSize=25;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
           <mxGeometry x="20" y="1310" width="213" height="117" as="geometry" />
         </mxCell>
         <mxCell id="eza31UwftHSti-V7xlUh-85" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="eza31UwftHSti-V7xlUh-84" vertex="1">
@@ -402,7 +402,7 @@
             <mxRectangle width="36" height="46" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-95" value="description" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-93" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-95" value="описание" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-93" vertex="1">
           <mxGeometry x="36" width="155" height="46" as="geometry">
             <mxRectangle width="155" height="46" as="alternateBounds" />
           </mxGeometry>
@@ -412,7 +412,7 @@
             <mxRectangle width="22" height="46" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-109" value="BOOK_STATUS" style="shape=table;startSize=25;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-109" value="СТАТУС_КНИГИ" style="shape=table;startSize=25;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
           <mxGeometry x="373" y="1375" width="265" height="172" as="geometry" />
         </mxCell>
         <mxCell id="eza31UwftHSti-V7xlUh-110" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="eza31UwftHSti-V7xlUh-109" vertex="1">
@@ -441,7 +441,7 @@
             <mxRectangle width="36" height="49" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-116" value="status_name" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-114" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-116" value="название_статуса" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-114" vertex="1">
           <mxGeometry x="36" width="207" height="49" as="geometry">
             <mxRectangle width="207" height="49" as="alternateBounds" />
           </mxGeometry>
@@ -459,7 +459,7 @@
             <mxRectangle width="36" height="49" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-120" value="status_description" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-118" vertex="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-120" value="описание_статуса" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" parent="eza31UwftHSti-V7xlUh-118" vertex="1">
           <mxGeometry x="36" width="207" height="49" as="geometry">
             <mxRectangle width="207" height="49" as="alternateBounds" />
           </mxGeometry>
@@ -469,24 +469,25 @@
             <mxRectangle width="22" height="49" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-139" value="uploads" style="curved=1;startArrow=ERmandOne;startSize=10;;endArrow=ERzeroToMany;endSize=10;;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" parent="1" source="eza31UwftHSti-V7xlUh-1" target="eza31UwftHSti-V7xlUh-18" edge="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-139" value="загружает" style="curved=1;startArrow=ERmandOne;startSize=10;;endArrow=ERzeroToMany;endSize=10;;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" parent="1" source="eza31UwftHSti-V7xlUh-1" target="eza31UwftHSti-V7xlUh-18" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-140" value="contains" style="curved=1;startArrow=ERmandOne;startSize=10;;endArrow=ERzeroToMany;endSize=10;;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" parent="1" source="eza31UwftHSti-V7xlUh-18" target="eza31UwftHSti-V7xlUh-39" edge="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-140" value="содержит" style="curved=1;startArrow=ERmandOne;startSize=10;;endArrow=ERzeroToMany;endSize=10;;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" parent="1" source="eza31UwftHSti-V7xlUh-18" target="eza31UwftHSti-V7xlUh-39" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-141" value="has_location" style="curved=1;startArrow=ERzeroToMany;startSize=10;;endArrow=ERmandOne;endSize=10;;exitX=0;exitY=0.72;entryX=0.5;entryY=0;rounded=0;endFill=0;startFill=0;" parent="1" source="eza31UwftHSti-V7xlUh-39" target="eza31UwftHSti-V7xlUh-84" edge="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-141" value="имеет местоположение" style="curved=1;startArrow=ERzeroToMany;startSize=10;;endArrow=ERmandOne;endSize=10;;exitX=0;exitY=0.72;entryX=0.5;entryY=0;rounded=0;endFill=0;startFill=0;" parent="1" source="eza31UwftHSti-V7xlUh-39" target="eza31UwftHSti-V7xlUh-84" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="127" y="1259" />
             </Array>
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eza31UwftHSti-V7xlUh-142" value="has_status" style="curved=1;startArrow=ERmandOne;startSize=10;;endArrow=ERmandOne;endSize=10;;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" parent="1" source="eza31UwftHSti-V7xlUh-39" target="eza31UwftHSti-V7xlUh-109" edge="1">
+        <mxCell id="eza31UwftHSti-V7xlUh-142" value="имеет статус" style="curved=1;startArrow=ERmandOne;startSize=10;;endArrow=ERmandOne;endSize=10;;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" parent="1" source="eza31UwftHSti-V7xlUh-39" target="eza31UwftHSti-V7xlUh-109" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
           </mxGeometry>
